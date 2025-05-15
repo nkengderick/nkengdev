@@ -1,0 +1,212 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Nkengbeza Derick",
+    "iam": "I'm a",
+    "title": "Full-Stack Developer",
+    "subtitle": "Building innovative web solutions with modern technologies",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get In Touch",
+      "download": "Download CV"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Nkengbeza Derick. All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "aboutPreview": {
+    "title": "About Me",
+    "description": "A passionate Full-Stack Developer with over 3 years of experience crafting digital experiences",
+    "content": {
+      "intro": "I am a dedicated software developer based in Cameroon, specializing in creating modern web applications and scalable backend solutions. My journey in tech began with a curiosity for how things work on the internet, and it has evolved into a professional passion for building impactful digital solutions.",
+      "expertise": "With expertise in React.js, Next.js, Node.js, and various databases, I bring ideas to life through clean, efficient code. I'm particularly passionate about creating user-friendly interfaces and robust backend architectures.",
+      "approach": "I believe in continuous learning and staying updated with the latest technologies. Whether working independently or as part of a team, I'm committed to delivering high-quality solutions that make a difference."
+    },
+    "highlights": {
+      "experience": "3+ years of web development",
+      "technologies": "React, Node.js & modern stack",
+      "education": "B.Eng at University of Buea",
+      "passion": "System administration & scalability"
+    },
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projects": "Projects Completed",
+      "technologies": "Technologies",
+      "satisfaction": "Client Satisfaction"
+    },
+    "passionStatement": "Passionate about turning ideas into reality",
+    "techStackPreview": "Some technologies I work with daily",
+    "cta": "Read Full Story",
+    "viewExperience": "View Experience"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Showcasing my expertise in full-stack development through real-world applications",
+    "badge": "My Recent Work",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "githubLink": "GitHub",
+    "liveDemo": "Live Demo",
+    "technologies": "Technologies Used",
+    "featured": [
+      {
+        "title": "Tenant's Sphere",
+        "description": "A comprehensive property management system with features like tenancy agreements, maintenance requests, and online rent payments.",
+        "tech": ["React", "Node.js", "MongoDB", "Express"],
+        "role": "Full-Stack Developer"
+      },
+      {
+        "title": "Student ProGuide",
+        "description": "An educational platform for document delivery and student resources, built with modern web technologies.",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "role": "Frontend Developer"
+      },
+      {
+        "title": "Biometric Attendance App",
+        "description": "Cross-platform application for educational institutions to manage student attendance with biometric integration.",
+        "tech": ["React Native", "Node.js", "SQL"],
+        "role": "Full-Stack Developer"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey and growth",
+    "timeline": [
+      {
+        "role": "Web Developer",
+        "company": "Freelance",
+        "location": "Buea, Cameroon",
+        "period": "Apr 2023 - Present",
+        "description": "Developing responsive portfolio websites and web applications for various clients using modern technologies.",
+        "achievements": [
+          "Built multiple client websites with React and Node.js",
+          "Improved website performance by 40%",
+          "Implemented SEO best practices"
+        ]
+      },
+      {
+        "role": "Full-Stack Developer",
+        "company": "Combi Universe",
+        "location": "Buea, Cameroon",
+        "period": "June 2023 - Present",
+        "description": "Working with a team to develop and maintain an educational platform using the MERN stack.",
+        "achievements": [
+          "Developed key features for the educational platform",
+          "Improved user experience based on feedback",
+          "Collaborated with team using Agile methodologies"
+        ]
+      },
+      {
+        "role": "Backend Developer Intern",
+        "company": "Tenant's Sphere",
+        "location": "Buea, Cameroon",
+        "period": "2023",
+        "description": "Gained hands-on experience in backend development and software testing.",
+        "achievements": [
+          "Built robust property management system features",
+          "Implemented secure authentication and authorization",
+          "Developed RESTful APIs for frontend integration"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or just say hi!",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "nkengbderick@gmail.com",
+      "phone": "+237 681390155",
+      "location": "Molyko, Buea, Cameroon",
+      "availability": "Available for freelance projects"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "learnMore": "Learn More",
+    "backToHome": "Back to Home"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Proficiency levels across various technologies and tools I use to build amazing products",
+    "categories": {
+      "frontend": {
+        "title": "Frontend Development",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Redux"
+        ]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Nest.js",
+          "REST APIs",
+          "MongoDB",
+          "SQL",
+          "PostgreSQL"
+        ]
+      },
+      "tools": {
+        "title": "Tools & Platforms",
+        "skills": [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Docker",
+          "Linux",
+          "Windows",
+          "Chrome DevTools"
+        ]
+      },
+      "soft": {
+        "title": "Soft Skills",
+        "skills": [
+          "Team Collaboration",
+          "Problem Solving",
+          "Communication",
+          "Project Management",
+          "Agile/Scrum"
+        ]
+      }
+    },
+    "exploring": "And more technologies I'm exploring...",
+    "badge": "Technical Expertise"
+  }
+}

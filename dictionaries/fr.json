@@ -1,0 +1,212 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Nkengbeza Derick",
+    "iam": "Je suis",
+    "title": "Développeur Full-Stack",
+    "subtitle": "Création de solutions web innovantes avec des technologies modernes",
+    "cta": {
+      "projects": "Voir les projets",
+      "contact": "Prendre contact",
+      "download": "Télécharger le CV"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Nkengbeza Derick. Tous droits réservés."
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "aboutPreview": {
+    "title": "À propos de moi",
+    "description": "Un développeur Full-Stack passionné avec plus de 3 ans d'expérience dans la création d'expériences numériques",
+    "content": {
+      "intro": "Je suis un développeur logiciel dévoué basé au Cameroun, spécialisé dans la création d'applications web modernes et de solutions backend évolutives. Mon parcours dans la technologie a commencé par une curiosité pour le fonctionnement d'Internet, et cela s'est transformé en une passion professionnelle pour construire des solutions numériques impactantes.",
+      "expertise": "Avec une expertise en React.js, Next.js, Node.js et diverses bases de données, je donne vie aux idées grâce à un code propre et efficace. Je suis particulièrement passionné par la création d'interfaces utilisateur conviviales et d'architectures backend robustes.",
+      "approach": "Je crois en l'apprentissage continu et en la mise à jour avec les dernières technologies. Que je travaille seul ou en équipe, je m'engage à fournir des solutions de haute qualité qui font la différence."
+    },
+    "highlights": {
+      "experience": "Plus de 3 ans en développement web",
+      "technologies": "React, Node.js & pile moderne",
+      "education": "B.Eng à l'Université de Buea",
+      "passion": "Administration système & évolutivité"
+    },
+    "stats": {
+      "yearsExperience": "Années d'expérience",
+      "projects": "Projets réalisés",
+      "technologies": "Technologies",
+      "satisfaction": "Satisfaction des clients"
+    },
+    "passionStatement": "Passionné par transformer les idées en réalité",
+    "techStackPreview": "Quelques technologies avec lesquelles je travaille quotidiennement",
+    "cta": "Lire l'histoire complète",
+    "viewExperience": "Voir l'expérience"
+  },
+  "projects": {
+    "title": "Projets en vedette",
+    "subtitle": "Une collection de mes travaux récents et projets personnels",
+    "viewAll": "Voir tous les projets",
+    "viewProject": "Voir le projet",
+    "githubLink": "GitHub",
+    "liveDemo": "Démo en direct",
+    "badge": "Mes travaux récents",
+    "technologies": "Technologies utilisées",
+    "featured": [
+      {
+        "title": "Tenant's Sphere",
+        "description": "Un système de gestion immobilière complet avec des fonctionnalités telles que les contrats de location, les demandes de maintenance et les paiements de loyer en ligne.",
+        "tech": ["React", "Node.js", "MongoDB", "Express"],
+        "role": "Développeur Full-Stack"
+      },
+      {
+        "title": "Student ProGuide",
+        "description": "Une plateforme éducative pour la livraison de documents et les ressources étudiantes, construite avec des technologies web modernes.",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "role": "Développeur Frontend"
+      },
+      {
+        "title": "Application de présence biométrique",
+        "description": "Application multiplateforme pour les établissements éducatifs afin de gérer la présence des étudiants avec une intégration biométrique.",
+        "tech": ["React Native", "Node.js", "SQL"],
+        "role": "Développeur Full-Stack"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Mon parcours professionnel et ma croissance",
+    "timeline": [
+      {
+        "role": "Développeur Web",
+        "company": "Freelance",
+        "location": "Buea, Cameroun",
+        "period": "Avr 2023 - Présent",
+        "description": "Développement de sites web de portfolio réactifs et d'applications web pour divers clients en utilisant des technologies modernes.",
+        "achievements": [
+          "Création de plusieurs sites web pour des clients avec React et Node.js",
+          "Amélioration des performances des sites web de 40 %",
+          "Mise en œuvre des meilleures pratiques SEO"
+        ]
+      },
+      {
+        "role": "Développeur Full-Stack",
+        "company": "Combi Universe",
+        "location": "Buea, Cameroun",
+        "period": "Juin 2023 - Présent",
+        "description": "Travail en équipe pour développer et maintenir une plateforme éducative en utilisant la pile MERN.",
+        "achievements": [
+          "Développement de fonctionnalités clés pour la plateforme éducative",
+          "Amélioration de l'expérience utilisateur basée sur les retours",
+          "Collaboration avec l'équipe en utilisant des méthodologies Agile"
+        ]
+      },
+      {
+        "role": "Stagiaire Développeur Backend",
+        "company": "Tenant's Sphere",
+        "location": "Buea, Cameroun",
+        "period": "2023",
+        "description": "Acquisition d'une expérience pratique en développement backend et en tests logiciels.",
+        "achievements": [
+          "Création de fonctionnalités robustes pour le système de gestion immobilière",
+          "Mise en œuvre d'une authentification et d'une autorisation sécurisées",
+          "Développement d'API RESTful pour l'intégration frontend"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Prendre contact",
+    "subtitle": "Discutons de votre prochain projet ou dites simplement bonjour !",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "nkengbderick@gmail.com",
+      "phone": "+237 681390155",
+      "location": "Molyko, Buea, Cameroun",
+      "availability": "Disponible pour des projets freelance"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "retry": "Réessayer",
+    "viewMore": "Voir plus",
+    "viewLess": "Voir moins",
+    "learnMore": "En savoir plus",
+    "backToHome": "Retour à l'accueil"
+  },
+  "skills": {
+    "title": "Compétences & Technologies",
+    "subtitle": "Niveaux de maîtrise dans diverses technologies et outils que j'utilise pour créer des produits exceptionnels",
+    "categories": {
+      "frontend": {
+        "title": "Développement Frontend",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Redux"
+        ]
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Nest.js",
+          "API REST",
+          "MongoDB",
+          "SQL",
+          "PostgreSQL"
+        ]
+      },
+      "tools": {
+        "title": "Outils & Plateformes",
+        "skills": [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Docker",
+          "Linux",
+          "Windows",
+          "Chrome DevTools"
+        ]
+      },
+      "soft": {
+        "title": "Compétences transversales",
+        "skills": [
+          "Collaboration en équipe",
+          "Résolution de problèmes",
+          "Communication",
+          "Gestion de projet",
+          "Agile/Scrum"
+        ]
+      }
+    },
+    "exploring": "Et d'autres technologies que j'explore...",
+    "badge": "Expertise technique"
+  }
+}
