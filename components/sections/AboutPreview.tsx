@@ -77,9 +77,9 @@ export function AboutPreview() {
     <section className="relative py-20 md:py-32 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/50 to-background" />
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-secondary/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent/50 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

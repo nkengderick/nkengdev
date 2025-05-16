@@ -32,40 +32,40 @@
     "title": "À propos de moi",
     "description": "Un développeur Full-Stack passionné avec plus de 3 ans d'expérience dans la création d'expériences numériques",
     "content": {
-      "intro": "Je suis un développeur logiciel dévoué basé au Cameroun, spécialisé dans la création d'applications web modernes et de solutions backend évolutives. Mon parcours dans la technologie a commencé par une curiosité pour le fonctionnement d'Internet, et cela s'est transformé en une passion professionnelle pour construire des solutions numériques impactantes.",
+      "intro": "Je suis un développeur logiciel basé au Cameroun, spécialisé dans la création d'applications web modernes et de solutions backend évolutives. Mon parcours dans la technologie a commencé par une curiosité pour le fonctionnement d'Internet, et il s'est transformé en une passion professionnelle pour la construction de solutions numériques impactantes.",
       "expertise": "Avec une expertise en React.js, Next.js, Node.js et diverses bases de données, je donne vie aux idées grâce à un code propre et efficace. Je suis particulièrement passionné par la création d'interfaces utilisateur conviviales et d'architectures backend robustes.",
       "approach": "Je crois en l'apprentissage continu et en la mise à jour avec les dernières technologies. Que je travaille seul ou en équipe, je m'engage à fournir des solutions de haute qualité qui font la différence."
     },
     "highlights": {
-      "experience": "Plus de 3 ans en développement web",
-      "technologies": "React, Node.js & pile moderne",
+      "experience": "Plus de 3 ans de développement web",
+      "technologies": "React, Node.js & stack moderne",
       "education": "B.Eng à l'Université de Buea",
       "passion": "Administration système & évolutivité"
     },
     "stats": {
       "yearsExperience": "Années d'expérience",
-      "projects": "Projets réalisés",
+      "projects": "Projets complétés",
       "technologies": "Technologies",
       "satisfaction": "Satisfaction des clients"
     },
-    "passionStatement": "Passionné par transformer les idées en réalité",
-    "techStackPreview": "Quelques technologies avec lesquelles je travaille quotidiennement",
+    "passionStatement": "Passionné par la transformation des idées en réalité",
+    "techStackPreview": "Certaines technologies avec lesquelles je travaille quotidiennement",
     "cta": "Lire l'histoire complète",
     "viewExperience": "Voir l'expérience"
   },
   "projects": {
     "title": "Projets en vedette",
-    "subtitle": "Une collection de mes travaux récents et projets personnels",
+    "subtitle": "Démonstration de mon expertise en développement full-stack à travers des applications réelles",
+    "badge": "Mes travaux récents",
     "viewAll": "Voir tous les projets",
     "viewProject": "Voir le projet",
     "githubLink": "GitHub",
     "liveDemo": "Démo en direct",
-    "badge": "Mes travaux récents",
     "technologies": "Technologies utilisées",
     "featured": [
       {
         "title": "Tenant's Sphere",
-        "description": "Un système de gestion immobilière complet avec des fonctionnalités telles que les contrats de location, les demandes de maintenance et les paiements de loyer en ligne.",
+        "description": "Un système complet de gestion immobilière avec des fonctionnalités telles que les contrats de location, les demandes de maintenance et les paiements de loyer en ligne.",
         "tech": ["React", "Node.js", "MongoDB", "Express"],
         "role": "Développeur Full-Stack"
       },
@@ -77,7 +77,7 @@
       },
       {
         "title": "Application de présence biométrique",
-        "description": "Application multiplateforme pour les établissements éducatifs afin de gérer la présence des étudiants avec une intégration biométrique.",
+        "description": "Application multiplateforme pour les institutions éducatives afin de gérer la présence des étudiants avec intégration biométrique.",
         "tech": ["React Native", "Node.js", "SQL"],
         "role": "Développeur Full-Stack"
       }
@@ -92,9 +92,9 @@
         "company": "Freelance",
         "location": "Buea, Cameroun",
         "period": "Avr 2023 - Présent",
-        "description": "Développement de sites web de portfolio réactifs et d'applications web pour divers clients en utilisant des technologies modernes.",
+        "description": "Développement de sites web de portefeuille réactifs et d'applications web pour divers clients en utilisant des technologies modernes.",
         "achievements": [
-          "Création de plusieurs sites web pour des clients avec React et Node.js",
+          "Construction de plusieurs sites web clients avec React et Node.js",
           "Amélioration des performances des sites web de 40 %",
           "Mise en œuvre des meilleures pratiques SEO"
         ]
@@ -104,11 +104,11 @@
         "company": "Combi Universe",
         "location": "Buea, Cameroun",
         "period": "Juin 2023 - Présent",
-        "description": "Travail en équipe pour développer et maintenir une plateforme éducative en utilisant la pile MERN.",
+        "description": "Collaboration avec une équipe pour développer et maintenir une plateforme éducative utilisant la stack MERN.",
         "achievements": [
           "Développement de fonctionnalités clés pour la plateforme éducative",
           "Amélioration de l'expérience utilisateur basée sur les retours",
-          "Collaboration avec l'équipe en utilisant des méthodologies Agile"
+          "Collaboration avec l'équipe en utilisant des méthodologies agiles"
         ]
       },
       {
@@ -118,9 +118,9 @@
         "period": "2023",
         "description": "Acquisition d'une expérience pratique en développement backend et en tests logiciels.",
         "achievements": [
-          "Création de fonctionnalités robustes pour le système de gestion immobilière",
+          "Construction de fonctionnalités robustes pour le système de gestion immobilière",
           "Mise en œuvre d'une authentification et d'une autorisation sécurisées",
-          "Développement d'API RESTful pour l'intégration frontend"
+          "Développement d'APIs RESTful pour l'intégration frontend"
         ]
       }
     ]
@@ -177,7 +177,7 @@
           "Node.js",
           "Express.js",
           "Nest.js",
-          "API REST",
+          "APIs REST",
           "MongoDB",
           "SQL",
           "PostgreSQL"
@@ -192,7 +192,7 @@
           "Docker",
           "Linux",
           "Windows",
-          "Chrome DevTools"
+          "Outils de développement Chrome"
         ]
       },
       "soft": {
@@ -208,5 +208,201 @@
     },
     "exploring": "Et d'autres technologies que j'explore...",
     "badge": "Expertise technique"
+  },
+  "about": {
+    "education": {
+      "bachelor": {
+        "title": "Licence en Ingénierie",
+        "description": "Spécialisation en ingénierie logicielle avec un accent sur les technologies web et l'administration système. Diplôme prévu en 2025."
+      },
+      "gce": {
+        "title": "Niveau Avancé GCE",
+        "description": "Complété les A-Levels avec d'excellentes notes (GPA 4.0), en se concentrant sur les mathématiques, la physique et l'informatique."
+      }
+    },
+    "experience": {
+      "timeline": {
+        "[0]": {
+          "role": "Développeur Web",
+          "company": "Freelance",
+          "description": "Développement de sites web de portefeuille réactifs en utilisant React et Node.js pour divers clients. Mise en œuvre de solutions personnalisées et garantie d'expériences utilisateur exceptionnelles."
+        },
+        "[1]": {
+          "role": "Développeur Web",
+          "company": "Combi Universe",
+          "description": "Collaboration avec une équipe pour développer et déployer des sites web éducatifs en utilisant la stack MERN. Maintenance et amélioration actuelles de la plateforme basées sur les retours des utilisateurs et les analyses."
+        },
+        "[2]": {
+          "role": "Stagiaire Développeur Backend",
+          "company": "Tenant's Sphere",
+          "description": "Acquisition d'une expérience pratique en développement backend et en tests logiciels, en se concentrant sur la création d'applications web évolutives et sécurisées. Construction d'un système robuste de gestion immobilière avec des fonctionnalités telles que les contrats de location, les demandes de maintenance et les paiements de loyer en ligne."
+        },
+        "[3]": {
+          "role": "Stagiaire Développeur Frontend",
+          "company": "Student ProGuide",
+          "description": "Travail en tant que développeur et designer frontend en utilisant Next.js, développement et documentation d'une application web de livraison utilisant des technologies comme TypeScript, Next.js, Bootstrap et Tailwind CSS."
+        },
+        "[4]": {
+          "role": "Stagiaire Académique",
+          "company": "Kings Digital",
+          "description": "Participation à des projets et tâches impliquant le développement frontend, tels que des passerelles de paiement et des applications de portefeuille électronique, le développement mobile et quelques travaux d'optimisation SEO."
+        }
+      }
+    },
+    "heading": {
+      "title": "À propos de moi",
+      "name": "Nkengbeza Derick",
+      "subtitle": "Je suis un développeur full-stack passionné avec une solide base en développement web et un intérêt croissant pour l'administration système et la gestion des données."
+    },
+    "buttons": {
+      "downloadResume": "Télécharger le CV",
+      "contactMe": "Me contacter",
+      "viewProjects": "Voir mes travaux"
+    },
+    "tabs": {
+      "story": "Mon histoire",
+      "skills": "Compétences & Expertise",
+      "experience": "Expérience",
+      "education": "Éducation"
+    },
+    "journey": {
+      "title": "Mon parcours",
+      "description": "Découvrez plus sur mon parcours, mes compétences et ce qui me motive en tant que développeur."
+    },
+    "quickFacts": {
+      "title": "Faits rapides",
+      "born": {
+        "label": "Né",
+        "value": "21 juin 2002"
+      },
+      "experience": {
+        "label": "Expérience",
+        "value": "Plus de 3 ans"
+      },
+      "projects": {
+        "label": "Projets",
+        "value": "Plus de 20 complétés"
+      }
+    },
+    "story": {
+      "paragraph1": "Mon voyage dans le monde du développement logiciel a commencé par une simple curiosité sur le fonctionnement des sites web. Cette curiosité s'est rapidement transformée en une profonde passion pour la création d'expériences numériques qui résolvent des problèmes réels.",
+      "paragraph2": "Avec plus de 3 ans d'expérience en développement web et backend, j'ai eu l'opportunité de travailler sur une gamme diversifiée de projets, des plateformes éducatives aux systèmes de gestion immobilière. Chaque projet m'a enseigné des leçons précieuses et m'a aidé à affiner mes compétences.",
+      "paragraph3": "Actuellement en poursuite de ma licence en ingénierie à l'Université de Buea, je cherche constamment à élargir mes connaissances et à rester à la pointe des avancées technologiques. Mon parcours académique me fournit une base solide en résolution de problèmes et en pensée analytique, tandis que mon expérience pratique me permet de mettre en œuvre des solutions efficaces.",
+      "paragraph4": "En tant que développeur full-stack, je me spécialise dans la construction d'applications web réactives et conviviales en utilisant des frameworks modernes comme React.js, Next.js et Express.js. J'ai une solide compréhension de la conception d'API REST et je suis compétent dans les bases de données SQL et NoSQL.",
+      "paragraph5": "Au-delà du développement web, je développe également une expertise en administration système et en gestion des données, car je crois que ces compétences sont cruciales pour créer des solutions complètes et évolutives.",
+      "paragraph6": "Je suis guidé par la conviction que la technologie doit être accessible et bénéfique pour tous. Cette philosophie oriente mon approche du développement, où je privilégie un code propre, des interfaces utilisateur intuitives et une fonctionnalité robuste."
+    },
+    "personalInterests": {
+      "title": "Intérêts personnels",
+      "interests": "Développement Web,Administration Système,IA & Machine Learning,Open Source,Design UI/UX,Enseignement de la Technologie"
+    },
+    "skills": {
+      "frontend": {
+        "title": "Développement Frontend",
+        "skills": {
+          "react": { "name": "React.js", "percentage": 90 },
+          "next": { "name": "Next.js", "percentage": 85 },
+          "typescript": { "name": "TypeScript", "percentage": 80 },
+          "html_css": { "name": "HTML/CSS", "percentage": 95 },
+          "tailwind": { "name": "Tailwind CSS", "percentage": 85 },
+          "redux": { "name": "Redux", "percentage": 75 }
+        }
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "skills": {
+          "node": { "name": "Node.js", "percentage": 85 },
+          "express": { "name": "Express.js", "percentage": 85 },
+          "mongodb": { "name": "MongoDB", "percentage": 80 },
+          "sql": { "name": "SQL", "percentage": 75 },
+          "rest_apis": { "name": "APIs REST", "percentage": 85 },
+          "nest": { "name": "Nest.js", "percentage": 70 }
+        }
+      },
+      "tools": {
+        "title": "Outils & Technologies",
+        "tools": {
+          "git": "Git/GitHub",
+          "vscode": "VS Code",
+          "devtools": "Outils de développement Chrome",
+          "linux": "Linux",
+          "docker": "Docker",
+          "agile": "Agile/Scrum",
+          "rest_api": "Conception d'API REST",
+          "responsive": "Design réactif",
+          "cicd": "CI/CD",
+          "testing": "Tests",
+          "webpack": "Webpack",
+          "npm_yarn": "npm/yarn"
+        }
+      },
+      "learning": {
+        "title": "En cours d'apprentissage",
+        "skills": {
+          "graphql": "GraphQL",
+          "aws": "AWS",
+          "docker_k8s": "Docker & Kubernetes",
+          "react_native": "React Native",
+          "sysadmin": "Administration Système",
+          "data_science": "Science des Données"
+        }
+      }
+    },
+    "services": {
+      "title": "Ce que je propose",
+      "subtitle": "Un ensemble complet de compétences et de services pour donner vie à vos idées numériques.",
+      "frontend": {
+        "title": "Développement Frontend",
+        "description": "Création d'interfaces utilisateur réactives et intuitives avec des frameworks modernes comme React et Next.js, optimisées pour les performances et l'accessibilité.",
+        "items": "React.js,Next.js,Design réactif,Implémentation UI/UX",
+        "keyOfferings": "Offres clés :"
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "description": "Construction d'applications côté serveur et d'APIs robustes qui alimentent vos applications web, avec un accent sur la sécurité et l'évolutivité.",
+        "items": "Node.js,Express.js,MongoDB,Conception d'API REST",
+        "keyOfferings": "Offres clés :"
+      },
+      "fullstack": {
+        "title": "Solutions Full-Stack",
+        "description": "Développement de bout en bout d'applications web, combinant l'expertise frontend et backend pour créer des expériences cohérentes et fluides.",
+        "items": "Stack MERN,Cycle de vie complet de l'application,Conception de bases de données,Authentification",
+        "keyOfferings": "Offres clés :"
+      }
+    },
+    "cta": {
+      "title": "Travaillons ensemble !",
+      "description": "Vous cherchez un développeur capable de donner vie à vos idées ? Je suis actuellement disponible pour des projets freelance et des opportunités excitantes.",
+      "passion": {
+        "title": "Passionné par la création",
+        "subtitle": "d'expériences numériques exceptionnelles"
+      },
+      "buttons": {
+        "contact": "Me contacter",
+        "seeWork": "Voir mes travaux"
+      }
+    },
+    "location": {
+      "city": "Buea, Cameroun",
+      "role": "Développeur Full-Stack"
+    },
+    "terminal": {
+      "header": "Terminal - derick@portfolio",
+      "prompt": "derick@portfolio:~$ ",
+      "commands": {
+        "aboutMe": {
+          "command": "cat aboutMe.json",
+          "output": "{\n  \"name\": \"Nkengbeza Derick\",\n  \"role\": \"Développeur Full-Stack\",\n  \"location\": \"Buea, Cameroun\",\n  \"interests\": [\"Développement Web\", \"Administration Système\", \"IA\"]\n}"
+        },
+        "projects": {
+          "command": "ls -la projects/",
+          "output": "total 6\ndrwxr-xr-x  2 derick staff  68B Apr 12 10:23 tenants-sphere/\ndrwxr-xr-x  2 derick staff  68B Mar 18 14:02 student-proguide/\ndrwxr-xr-x  2 derick staff  68B Feb 25 09:45 biometric-app/\n-rw-r--r--  1 derick staff 1.2K Jan 10 20:14 portfolio.tsx\n-rw-r--r--  1 derick staff 954B Dec 08 15:37 quiz-app.tsx\n-rw-r--r--  1 derick staff 2.1K Nov 19 12:21 delivery-app.js"
+        },
+        "skills": {
+          "command": "node skills.js",
+          "output": "Frontend: React, Next.js, TypeScript, HTML/CSS, Tailwind\nBackend: Node.js, Express, Nest.js, MongoDB, SQL\nOutils: Git, VS Code, Linux, Docker\nChargement expertise.module.js... ██████████ 100%\nNiveau expert atteint dans la stack MERN."
+        }
+      }
+    }
   }
 }

@@ -13,6 +13,7 @@ const ChatwootWidget = () => {
       g.async = true;
       s.parentNode?.insertBefore(g, s);
       g.onload = function () {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (window as any).chatwootSDK.run({
           websiteToken: "eBfgD7atc8vgz6nD4cNVJgKV",
           baseUrl: BASE_URL,

@@ -65,7 +65,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center py-20 md:py-0 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-accent/50 to-secondary/50" />
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
           animate={{

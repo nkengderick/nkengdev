@@ -208,5 +208,201 @@
     },
     "exploring": "And more technologies I'm exploring...",
     "badge": "Technical Expertise"
+  },
+  "about": {
+    "education": {
+      "bachelor": {
+        "title": "Bachelor's Degree in Engineering",
+        "description": "Specializing in Software Engineering with a focus on web technologies and system administration. Expected graduation in 2025."
+      },
+      "gce": {
+        "title": "GCE Advanced Level",
+        "description": "Completed A-Levels with excellent grades (GPA 4.0), focusing on Mathematics, Physics, and Computer Science."
+      }
+    },
+    "experience": {
+      "timeline": {
+        "[0]": {
+          "role": "Web Developer",
+          "company": "Freelance",
+          "description": "Developing responsive portfolio websites using React and Node.js for various clients. Implementing custom solutions and ensuring exceptional user experiences."
+        },
+        "[1]": {
+          "role": "Web Developer",
+          "company": "Combi Universe",
+          "description": "Working with a team to develop and deploy educational websites using the MERN stack. Currently maintaining and improving the platform based on user feedback and analytical insights."
+        },
+        "[2]": {
+          "role": "Backend Developer Intern",
+          "company": "Tenant's Sphere",
+          "description": "Gained hands-on experience in backend development and software testing, focusing on creating scalable and secure web applications. Built a robust property management system with features like tenancy agreements, maintenance requests, and online rent payments."
+        },
+        "[3]": {
+          "role": "Frontend Developer Intern",
+          "company": "Student ProGuide",
+          "description": "Worked as a Frontend Developer and Designer using Next.js, developed and documented a delivery web application utilizing technologies like TypeScript, Next.js, Bootstrap, and Tailwind CSS."
+        },
+        "[4]": {
+          "role": "Academic Intern",
+          "company": "Kings Digital",
+          "description": "Enrolled in projects and tasks involving Frontend Development, such as Payment Gateway and electronic wallet applications, Mobile Development, and some SEO optimization work."
+        }
+      }
+    },
+    "heading": {
+      "title": "About Me",
+      "name": "Nkengbeza Derick",
+      "subtitle": "I'm a passionate full-stack developer with a strong foundation in web development and a growing interest in system administration and data management."
+    },
+    "buttons": {
+      "downloadResume": "Download Resume",
+      "contactMe": "Contact Me",
+      "viewProjects": "See My Work"
+    },
+    "tabs": {
+      "story": "My Story",
+      "skills": "Skills & Expertise",
+      "experience": "Experience",
+      "education": "Education"
+    },
+    "journey": {
+      "title": "My Journey",
+      "description": "Discover more about my background, skills, and what drives me as a developer."
+    },
+    "quickFacts": {
+      "title": "Quick Facts",
+      "born": {
+        "label": "Born",
+        "value": "June 21, 2002"
+      },
+      "experience": {
+        "label": "Experience",
+        "value": "3+ Years"
+      },
+      "projects": {
+        "label": "Projects",
+        "value": "20+ Completed"
+      }
+    },
+    "story": {
+      "paragraph1": "My journey into the world of software development began with a simple curiosity about how websites work. That curiosity quickly blossomed into a deep passion for creating digital experiences that solve real-world problems.",
+      "paragraph2": "With over 3 years of experience in web and backend development, I've had the opportunity to work on a diverse range of projects, from educational platforms to property management systems. Each project has taught me valuable lessons and helped me refine my skills.",
+      "paragraph3": "Currently pursuing my Bachelor's degree in Engineering at the University of Buea, I'm constantly seeking to expand my knowledge and stay at the forefront of technological advancements. My academic background provides me with a strong foundation in problem-solving and analytical thinking, while my practical experience allows me to implement effective solutions.",
+      "paragraph4": "As a full-stack developer, I specialize in building responsive, user-friendly web applications using modern frameworks like React.js, Next.js, and Express.js. I have a strong understanding of REST API design and am proficient in both SQL and NoSQL databases.",
+      "paragraph5": "Beyond web development, I'm also developing expertise in system administration and data management, as I believe these skills are crucial for creating comprehensive, scalable solutions.",
+      "paragraph6": "I'm driven by the belief that technology should be accessible and beneficial to everyone. This philosophy guides my approach to development, where I prioritize clean code, intuitive user interfaces, and robust functionality."
+    },
+    "personalInterests": {
+      "title": "Personal Interests",
+      "interests": "Web Development,System Administration,AI & Machine Learning,Open Source, UI/UX Design,Teaching Technology"
+    },
+    "skills": {
+      "frontend": {
+        "title": "Frontend Development",
+        "skills": {
+          "react": { "name": "React.js", "percentage": 90 },
+          "next": { "name": "Next.js", "percentage": 85 },
+          "typescript": { "name": "TypeScript", "percentage": 80 },
+          "html_css": { "name": "HTML/CSS", "percentage": 95 },
+          "tailwind": { "name": "Tailwind CSS", "percentage": 85 },
+          "redux": { "name": "Redux", "percentage": 75 }
+        }
+      },
+      "backend": {
+        "title": "Backend Development",
+        "skills": {
+          "node": { "name": "Node.js", "percentage": 85 },
+          "express": { "name": "Express.js", "percentage": 85 },
+          "mongodb": { "name": "MongoDB", "percentage": 80 },
+          "sql": { "name": "SQL", "percentage": 75 },
+          "rest_apis": { "name": "REST APIs", "percentage": 85 },
+          "nest": { "name": "Nest.js", "percentage": 70 }
+        }
+      },
+      "tools": {
+        "title": "Tools & Technologies",
+        "tools": {
+          "git": "Git/GitHub",
+          "vscode": "VS Code",
+          "devtools": "Chrome DevTools",
+          "linux": "Linux",
+          "docker": "Docker",
+          "agile": "Agile/Scrum",
+          "rest_api": "REST API Design",
+          "responsive": "Responsive Design",
+          "cicd": "CI/CD",
+          "testing": "Testing",
+          "webpack": "Webpack",
+          "npm_yarn": "npm/yarn"
+        }
+      },
+      "learning": {
+        "title": "Currently Learning",
+        "skills": {
+          "graphql": "GraphQL",
+          "aws": "AWS",
+          "docker_k8s": "Docker & Kubernetes",
+          "react_native": "React Native",
+          "sysadmin": "System Administration",
+          "data_science": "Data Science"
+        }
+      }
+    },
+    "services": {
+      "title": "What I Offer",
+      "subtitle": "A comprehensive set of skills and services to bring your digital ideas to life.",
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Creating responsive, intuitive user interfaces with modern frameworks like React and Next.js, optimized for performance and accessibility.",
+        "items": "React.js,Next.js,Responsive Design, UI/UX Implementation",
+        "keyOfferings": "Key Offerings:"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building robust server-side applications and APIs that power your web applications, with a focus on security and scalability.",
+        "items": "Node.js,Express.js,MongoDB,REST API Design",
+        "keyOfferings": "Key Offerings:"
+      },
+      "fullstack": {
+        "title": "Full-Stack Solutions",
+        "description": "End-to-end development of web applications, combining frontend and backend expertise to create cohesive, seamless experiences.",
+        "items": "MERN Stack,Full Application Lifecycle,Database Design,Authentication",
+        "keyOfferings": "Key Offerings:"
+      }
+    },
+    "cta": {
+      "title": "Let's Work Together!",
+      "description": "Looking for a developer who can bring your ideas to life? I'm currently available for freelance work and exciting opportunities.",
+      "passion": {
+        "title": "Passionate about creating",
+        "subtitle": "exceptional digital experiences"
+      },
+      "buttons": {
+        "contact": "Contact Me",
+        "seeWork": "See My Work"
+      }
+    },
+    "location": {
+      "city": "Buea, Cameroon",
+      "role": "Full-Stack Developer"
+    },
+    "terminal": {
+      "header": "Terminal - derick@portfolio",
+      "prompt": "derick@portfolio:~$ ",
+      "commands": {
+        "aboutMe": {
+          "command": "cat aboutMe.json",
+          "output": "{\n  \"name\": \"Nkengbeza Derick\",\n  \"role\": \"Full Stack Developer\",\n  \"location\": \"Buea, Cameroon\",\n  \"interests\": [\"Web Development\", \"System Administration\", \"AI\"]\n}"
+        },
+        "projects": {
+          "command": "ls -la projects/",
+          "output": "total 6\ndrwxr-xr-x  2 derick staff  68B Apr 12 10:23 tenants-sphere/\ndrwxr-xr-x  2 derick staff  68B Mar 18 14:02 student-proguide/\ndrwxr-xr-x  2 derick staff  68B Feb 25 09:45 biometric-app/\n-rw-r--r--  1 derick staff 1.2K Jan 10 20:14 portfolio.tsx\n-rw-r--r--  1 derick staff 954B Dec 08 15:37 quiz-app.tsx\n-rw-r--r--  1 derick staff 2.1K Nov 19 12:21 delivery-app.js"
+        },
+        "skills": {
+          "command": "node skills.js",
+          "output": "Frontend: React, Next.js, TypeScript, HTML/CSS, Tailwind\nBackend: Node.js, Express, Nest.js, MongoDB, SQL\nTools: Git, VS Code, Linux, Docker\nLoading expertise.module.js... ██████████ 100%\nExpert level achieved in MERN stack."
+        }
+      }
+    }
   }
 }
