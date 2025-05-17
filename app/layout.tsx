@@ -82,7 +82,7 @@ export default async function RootLayout({
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

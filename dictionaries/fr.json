@@ -862,7 +862,8 @@
       "backToBlog": "Retour au blog",
       "tags": "Étiquettes",
       "previousPost": "Article précédent",
-      "nextPost": "Article suivant"
+      "nextPost": "Article suivant",
+      "featuredPosts": "Articles en vedette"
     }
   }
 }

@@ -859,7 +859,8 @@
       "backToBlog": "Back to Blog",
       "tags": "Tags",
       "previousPost": "Previous Post",
-      "nextPost": "Next Post"
+      "nextPost": "Next Post",
+      "featuredPosts": "Featured Posts"
     }
   }
 }
