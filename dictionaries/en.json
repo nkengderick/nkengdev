@@ -53,98 +53,6 @@
     "cta": "Read Full Story",
     "viewExperience": "View Experience"
   },
-  "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Showcasing my expertise in full-stack development through real-world applications",
-    "badge": "My Recent Work",
-    "viewAll": "View All Projects",
-    "viewProject": "View Project",
-    "githubLink": "GitHub",
-    "liveDemo": "Live Demo",
-    "technologies": "Technologies Used",
-    "featured": [
-      {
-        "title": "Tenant's Sphere",
-        "description": "A comprehensive property management system with features like tenancy agreements, maintenance requests, and online rent payments.",
-        "tech": ["React", "Node.js", "MongoDB", "Express"],
-        "role": "Full-Stack Developer"
-      },
-      {
-        "title": "Student ProGuide",
-        "description": "An educational platform for document delivery and student resources, built with modern web technologies.",
-        "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-        "role": "Frontend Developer"
-      },
-      {
-        "title": "Biometric Attendance App",
-        "description": "Cross-platform application for educational institutions to manage student attendance with biometric integration.",
-        "tech": ["React Native", "Node.js", "SQL"],
-        "role": "Full-Stack Developer"
-      }
-    ]
-  },
-  "experience": {
-    "title": "Experience",
-    "subtitle": "My professional journey and growth",
-    "timeline": [
-      {
-        "role": "Web Developer",
-        "company": "Freelance",
-        "location": "Buea, Cameroon",
-        "period": "Apr 2023 - Present",
-        "description": "Developing responsive portfolio websites and web applications for various clients using modern technologies.",
-        "achievements": [
-          "Built multiple client websites with React and Node.js",
-          "Improved website performance by 40%",
-          "Implemented SEO best practices"
-        ]
-      },
-      {
-        "role": "Full-Stack Developer",
-        "company": "Combi Universe",
-        "location": "Buea, Cameroon",
-        "period": "June 2023 - Present",
-        "description": "Working with a team to develop and maintain an educational platform using the MERN stack.",
-        "achievements": [
-          "Developed key features for the educational platform",
-          "Improved user experience based on feedback",
-          "Collaborated with team using Agile methodologies"
-        ]
-      },
-      {
-        "role": "Backend Developer Intern",
-        "company": "Tenant's Sphere",
-        "location": "Buea, Cameroon",
-        "period": "2023",
-        "description": "Gained hands-on experience in backend development and software testing.",
-        "achievements": [
-          "Built robust property management system features",
-          "Implemented secure authentication and authorization",
-          "Developed RESTful APIs for frontend integration"
-        ]
-      }
-    ]
-  },
-  "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Let's discuss your next project or just say hi!",
-    "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Failed to send message. Please try again."
-    },
-    "info": {
-      "email": "nkengbderick@gmail.com",
-      "phone": "+237 681390155",
-      "location": "Molyko, Buea, Cameroon",
-      "availability": "Available for freelance projects"
-    }
-  },
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",
@@ -153,61 +61,6 @@
     "viewLess": "View Less",
     "learnMore": "Learn More",
     "backToHome": "Back to Home"
-  },
-  "skills": {
-    "title": "Skills & Technologies",
-    "subtitle": "Proficiency levels across various technologies and tools I use to build amazing products",
-    "categories": {
-      "frontend": {
-        "title": "Frontend Development",
-        "skills": [
-          "React.js",
-          "Next.js",
-          "TypeScript",
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "Tailwind CSS",
-          "Redux"
-        ]
-      },
-      "backend": {
-        "title": "Backend Development",
-        "skills": [
-          "Node.js",
-          "Express.js",
-          "Nest.js",
-          "REST APIs",
-          "MongoDB",
-          "SQL",
-          "PostgreSQL"
-        ]
-      },
-      "tools": {
-        "title": "Tools & Platforms",
-        "skills": [
-          "Git",
-          "GitHub",
-          "VS Code",
-          "Docker",
-          "Linux",
-          "Windows",
-          "Chrome DevTools"
-        ]
-      },
-      "soft": {
-        "title": "Soft Skills",
-        "skills": [
-          "Team Collaboration",
-          "Problem Solving",
-          "Communication",
-          "Project Management",
-          "Agile/Scrum"
-        ]
-      }
-    },
-    "exploring": "And more technologies I'm exploring...",
-    "badge": "Technical Expertise"
   },
   "about": {
     "education": {
@@ -403,6 +256,610 @@
           "output": "Frontend: React, Next.js, TypeScript, HTML/CSS, Tailwind\nBackend: Node.js, Express, Nest.js, MongoDB, SQL\nTools: Git, VS Code, Linux, Docker\nLoading expertise.module.js... ██████████ 100%\nExpert level achieved in MERN stack."
         }
       }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Showcasing my expertise in full-stack development through real-world applications",
+    "badge": "My Recent Work",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "githubLink": "GitHub",
+    "liveDemo": "Live Demo",
+    "technologies": "Technologies Used",
+    "featured": [
+      {
+        "title": "Tenant's Sphere",
+        "description": "A comprehensive property management system with features like tenancy agreements, maintenance requests, and online rent payments.",
+        "tech": ["React", "Node.js", "MongoDB", "Express"],
+        "role": "Full-Stack Developer"
+      },
+      {
+        "title": "Student ProGuide",
+        "description": "An educational platform for document delivery and student resources, built with modern web technologies.",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "role": "Frontend Developer"
+      },
+      {
+        "title": "Biometric Attendance App",
+        "description": "Cross-platform application for educational institutions to manage student attendance with biometric integration.",
+        "tech": ["React Native", "Node.js", "SQL"],
+        "role": "Full-Stack Developer"
+      }
+    ],
+    "heroTitle": "My Creative Projects",
+    "heroSubtitle": "Software Development Portfolio",
+    "heroDescription": "A showcase of my passion for creating innovative web applications, mobile solutions, and full-stack development projects. Each project represents a unique challenge and showcases my technical expertise.",
+    "browseProjects": "Browse Projects",
+    "exploreTitle": "Explore My Work",
+    "exploreDescription": "Filter through my projects by category, timeline, or search for specific technologies and solutions.",
+    "featuredTitle": "Featured",
+    "viewDetails": "View Details",
+    "showingResults": "Showing {count} of {total} projects",
+    "sortedBy": "Sorted by",
+    "statsTitle": "Project Statistics",
+    "statsDescription": "A summary of my experience developing various types of applications across different technologies and platforms.",
+    "cta": {
+      "title": "Looking for a Developer?",
+      "description": "I'm available for freelance work, full-time positions, and collaborative projects. Let's discuss how I can help bring your ideas to life.",
+      "buttons": {
+        "discuss": "Discuss a Project",
+        "github": "Visit GitHub Profile"
+      },
+      "letsCollaborate": "Let's Collaborate"
+    },
+    "detail": {
+      "backToProjects": "Back to Projects",
+      "overview": "Project Overview",
+      "challenge": "The Challenge",
+      "solution": "My Solution",
+      "keyFeatures": "Key Features",
+      "testimonial": "Testimonial",
+      "projectDetails": "Project Details",
+      "completionDate": "Completion Date",
+      "category": "Category",
+      "technologies": "Technologies Used",
+      "interestedInProject": "Interested in this project?",
+      "discussDetails": "Let's discuss the details and see how I can help with your similar project needs.",
+      "getInTouch": "Get in Touch",
+      "exploreMore": "Explore More Projects",
+      "previousProject": "Previous Project",
+      "nextProject": "Next Project"
+    },
+    "filters": {
+      "searchPlaceholder": "Search projects...",
+      "category": "Category",
+      "year": "Year",
+      "yearAndSort": "Year & Sort",
+      "all": "All",
+      "allYears": "All Years",
+      "sortBy": "Sort By",
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "clearFilters": "Clear Filters"
+    },
+    "noResults": {
+      "title": "No Projects Found",
+      "description": "Try adjusting your filters or search criteria to see more projects.",
+      "resetButton": "Reset Filters"
+    },
+    "stats": {
+      "totalProjects": "Total Projects",
+      "frontendProjects": "Frontend Projects",
+      "backendProjects": "Backend Projects",
+      "databaseProjects": "Database Projects"
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Proficiency levels across various technologies and tools I use to build amazing products",
+    "categories": {
+      "frontend": {
+        "title": "Frontend Development",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Redux"
+        ]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Nest.js",
+          "REST APIs",
+          "MongoDB",
+          "SQL",
+          "PostgreSQL"
+        ]
+      },
+      "tools": {
+        "title": "Tools & Platforms",
+        "skills": [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Docker",
+          "Linux",
+          "Windows",
+          "Chrome DevTools"
+        ]
+      },
+      "soft": {
+        "title": "Soft Skills",
+        "skills": [
+          "Team Collaboration",
+          "Problem Solving",
+          "Communication",
+          "Project Management",
+          "Agile/Scrum"
+        ]
+      }
+    },
+    "exploring": "And more technologies I'm exploring...",
+    "badge": "Technical Expertise",
+    "hero": {
+      "subtitle": "Technical Expertise",
+      "title": "My Skills & Capabilities",
+      "description": "As a full-stack developer with over 3 years of experience, I've honed a versatile skill set across various technologies. Below is an overview of my technical expertise and areas of specialization.",
+      "buttons": {
+        "resume": "Download Resume",
+        "contact": "Get in Touch"
+      }
+    },
+    "visualize": {
+      "subtitle": "Skill Visualization",
+      "title": "Interactive Skill Overview",
+      "description": "Explore my technical capabilities through these interactive skill visualizations. Hover over each skill to see proficiency levels.",
+      "frontend": "My expertise in frontend technologies that create responsive, efficient user interfaces.",
+      "backend": "Server-side technologies I use to build robust, scalable applications.",
+      "tools": "Development tools and practices I leverage for efficient workflows.",
+      "legend": {
+        "title": "Proficiency Scale",
+        "expert": "Expert",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate",
+        "beginner": "Beginner"
+      }
+    },
+    "areas": {
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Creating responsive, accessible, and performant user interfaces with modern frameworks."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building robust server-side applications, APIs, and database architectures."
+      },
+      "fullstack": {
+        "title": "Full-Stack Solutions",
+        "description": "Implementing end-to-end applications with seamless integration between all layers."
+      }
+    },
+    "showcase": {
+      "title": "Technical Skills Showcase",
+      "description": "A comprehensive overview of my technical skills and proficiency levels across different domains."
+    },
+    "skills": {
+      "frontend": {
+        "skills": {
+          "react": {
+            "name": "React.js",
+            "percentage": 90
+          },
+          "next": {
+            "name": "Next.js",
+            "percentage": 85
+          },
+          "typescript": {
+            "name": "TypeScript",
+            "percentage": 80
+          },
+          "html": {
+            "name": "HTML/CSS",
+            "percentage": 90
+          },
+          "tailwind": {
+            "name": "Tailwind CSS",
+            "percentage": 90
+          },
+          "redux": {
+            "name": "Redux",
+            "percentage": 75
+          }
+        },
+        "react": "Building dynamic, high-performance user interfaces with the React ecosystem.",
+        "next": "Creating SEO-friendly, production-ready applications with Next.js framework.",
+        "typescript": "Writing type-safe, maintainable code with TypeScript for enhanced productivity.",
+        "html": "Crafting semantic, accessible, and responsive layouts with modern HTML/CSS.",
+        "tailwind": "Rapidly building custom designs with utility-first CSS framework.",
+        "redux": "Managing complex application state with Redux for predictable behavior."
+      },
+      "backend": {
+        "skills": {
+          "node": {
+            "name": "Node.js",
+            "percentage": 85
+          },
+          "express": {
+            "name": "Express.js",
+            "percentage": 85
+          },
+          "mongodb": {
+            "name": "MongoDB",
+            "percentage": 80
+          },
+          "sql": {
+            "name": "SQL",
+            "percentage": 75
+          },
+          "restapi": {
+            "name": "REST APIs",
+            "percentage": 85
+          },
+          "nest": {
+            "name": "Nest.js",
+            "percentage": 70
+          }
+        },
+        "node": "Building scalable server-side applications with Node.js runtime.",
+        "express": "Creating robust web applications and APIs with Express.js framework.",
+        "mongodb": "Designing flexible NoSQL database solutions with MongoDB.",
+        "sql": "Implementing relational database designs with SQL for data integrity.",
+        "restapi": "Developing RESTful APIs with best practices for frontend integration.",
+        "nest": "Building enterprise-grade applications with Nest.js progressive framework."
+      },
+      "tools": {
+        "title": "Development Tools & Practices",
+        "tools": {
+          "git": "Git & GitHub",
+          "vscode": "VS Code",
+          "docker": "Docker",
+          "linux": "Linux",
+          "agile": "Agile/Scrum",
+          "ci": "CI/CD"
+        }
+      },
+      "learning": {
+        "title": "Currently Learning",
+        "skills": {
+          "graphql": "GraphQL",
+          "kubernetes": "Kubernetes",
+          "aws": "AWS",
+          "python": "Python",
+          "blockchain": "Blockchain"
+        }
+      }
+    },
+    "journey": {
+      "subtitle": "Learning & Growth",
+      "title": "My Continuous Learning Journey",
+      "description": "I believe in lifelong learning and constantly expanding my skill set to stay current with emerging technologies and best practices.",
+      "items": {
+        "1": {
+          "title": "Self-Taught Foundations",
+          "description": "Started my journey through self-learning, online courses, and hands-on projects, building a strong foundation in web development fundamentals."
+        },
+        "2": {
+          "title": "Formal Education",
+          "description": "Pursuing a degree in Engineering with a focus on Software Engineering, combining theoretical knowledge with practical applications."
+        },
+        "3": {
+          "title": "Industry Experience",
+          "description": "Honing my skills through real-world projects, collaboration with experienced developers, and facing complex challenges in professional settings."
+        }
+      },
+      "buttons": {
+        "projects": "View My Projects"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey and growth",
+    "timeline": [
+      {
+        "role": "Web Developer",
+        "company": "Freelance",
+        "location": "Buea, Cameroon",
+        "period": "Apr 2023 - Present",
+        "description": "Developing responsive portfolio websites and web applications for various clients using modern technologies.",
+        "achievements": [
+          "Built multiple client websites with React and Node.js",
+          "Improved website performance by 40%",
+          "Implemented SEO best practices"
+        ]
+      },
+      {
+        "role": "Full-Stack Developer",
+        "company": "Combi Universe",
+        "location": "Buea, Cameroon",
+        "period": "June 2023 - Present",
+        "description": "Working with a team to develop and maintain an educational platform using the MERN stack.",
+        "achievements": [
+          "Developed key features for the educational platform",
+          "Improved user experience based on feedback",
+          "Collaborated with team using Agile methodologies"
+        ]
+      },
+      {
+        "role": "Backend Developer Intern",
+        "company": "Tenant's Sphere",
+        "location": "Buea, Cameroon",
+        "period": "2023",
+        "description": "Gained hands-on experience in backend development and software testing.",
+        "achievements": [
+          "Built robust property management system features",
+          "Implemented secure authentication and authorization",
+          "Developed RESTful APIs for frontend integration"
+        ]
+      }
+    ],
+    "hero": {
+      "subtitle": "Professional Journey",
+      "title": "My Experience & Background",
+      "description": "With over 3 years of experience in web development, I've had the opportunity to work on diverse projects across different domains, continuously expanding my skills and expertise.",
+      "buttons": {
+        "resume": "Download Resume",
+        "contact": "Contact Me"
+      }
+    },
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Completed",
+      "companies": "Companies Worked With",
+      "clients": "Satisfied Clients"
+    },
+    "highlights": {
+      "education": {
+        "title": "Educational Background",
+        "items": {
+          "1": "Currently pursuing a Bachelor's Degree in Engineering, Faculty of Engineering and Technology, University of Buea.",
+          "2": "Specialized in Software Engineering with focus on web technologies and system administration.",
+          "3": "Completed GCE Advanced Level with excellent grades (GPA 4.0) in Mathematics, Physics, and Computer Science."
+        }
+      },
+      "professional": {
+        "title": "Professional Highlights",
+        "items": {
+          "1": "Developed and deployed multiple full-stack web applications using modern technologies like React, Next.js, Node.js, and MongoDB.",
+          "2": "Collaborated with cross-functional teams to deliver high-quality software solutions that meet client requirements and business objectives.",
+          "3": "Implemented responsive and user-friendly interfaces, optimized for performance, accessibility, and search engine visibility."
+        }
+      }
+    },
+    "time_line": {
+      "title": "Professional Timeline",
+      "description": "A chronological overview of my professional journey, showcasing my work experience and educational background."
+    },
+    "categories": {
+      "work": "Professional Experience",
+      "education": "Education",
+      "achievements": "Achievements & Certifications"
+    },
+    "work": {
+      "freelancer": {
+        "description": "Currently developing responsive portfolio websites using React and Node.js for various clients, ensuring clean code architecture and optimal user experience."
+      },
+      "combi": {
+        "description": "Worked with a team to develop and deploy an educational website using MERN stack. Currently maintaining and improving the platform based on user feedback and analytics."
+      },
+      "tenants": {
+        "description": "Gained hands-on experience in backend development and software testing, focusing on creating scalable and secure web applications. Built a robust property management system with features like tenancy agreements, maintenance requests, and online rent payments."
+      },
+      "proguide": {
+        "description": "Frontend Developer and Designer using Next.js, developed and documented delivery web application utilizing technologies like TypeScript, Next.js, Bootstrap, and Tailwind CSS."
+      },
+      "kings": {
+        "description": "Academic internship, enrolled in projects and tasks involving Frontend Development, including payment gateway and electronic wallet applications, mobile development, and SEO optimization."
+      }
+    },
+    "education": {
+      "bachelors": {
+        "description": "Pursuing a degree in Software Engineering with focus on web technologies and system administration. Expected graduation in 2025."
+      },
+      "gce": {
+        "description": "Completed A-Levels with excellent grades (GPA 4.0), focusing on Mathematics, Physics, and Computer Science."
+      }
+    },
+    "achievements": {
+      "item1": "Developed and deployed a fully functional Biometric Attendance Application for educational institutions.",
+      "item2": "Recognized for exceptional performance during internship at Tenant's Sphere.",
+      "item3": "Successfully completed multiple freelance projects with positive client feedback and recommendations."
+    },
+    "keyInfo": {
+      "title": "Key Information",
+      "totalExperience": {
+        "title": "Total Experience",
+        "value": "3+ Years"
+      },
+      "companiesWorked": {
+        "title": "Companies",
+        "value": "4+"
+      },
+      "location": {
+        "title": "Location",
+        "value": "Buea, Cameroon"
+      },
+      "availability": {
+        "title": "Availability",
+        "value": "Available"
+      }
+    },
+    "cta": {
+      "title": "Interested in Working Together?",
+      "description": "I'm currently open to new opportunities and collaborations. Feel free to explore my projects or get in touch to discuss how we can work together.",
+      "buttons": {
+        "projects": "View Projects",
+        "contact": "Contact Me"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "subtitle": "Get in Touch",
+      "title": "Let's Work Together",
+      "description": "Have a project in mind or want to discuss potential collaboration? I'm just a message away. Fill out the form below or use the contact details, and I'll get back to you as soon as possible."
+    },
+    "notice": {
+      "title": "Important Note",
+      "message": "While I try to respond to all inquiries within 48 hours, response times may vary during busy periods. For urgent matters, please contact me directly via phone."
+    },
+    "map": {
+      "subtitle": "My Location",
+      "title": "Where to Find Me",
+      "fallback": "Unable to load the map. Please check your internet connection.",
+      "description": "Based in Buea, Cameroon, I work remotely with clients worldwide. Feel free to reach out regardless of your location."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Feel free to reach out through any of these channels. I'm always interested in new projects and opportunities.",
+      "email": {
+        "label": "Email Address"
+      },
+      "phone": {
+        "label": "Phone Number"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Molyko, Buea, Cameroon"
+      },
+      "availability": {
+        "label": "Availability",
+        "value": "Mon - Fri, 9:00 AM - 6:00 PM GMT+1"
+      },
+      "response": {
+        "label": "Response Time",
+        "value": "Usually within 24-48 hours"
+      },
+      "social": {
+        "title": "Find me on social media"
+      }
+    },
+    "card": {
+      "about": "About Me",
+      "description": "I'm a full-stack developer passionate about creating elegant solutions to complex problems. With expertise in web and mobile development, I strive to build applications that are both functional and visually appealing.",
+      "skills": {
+        "1": "3+ years of development experience",
+        "2": "Web & mobile application development",
+        "3": "MERN stack specialist",
+        "4": "Responsive UI/UX design"
+      },
+      "contact": "Contact Me",
+      "flip": "Tap to flip"
+    },
+    "faq": {
+      "subtitle": "Common Questions",
+      "description": "Here are answers to questions I'm often asked. If you don't find what you're looking for, please don't hesitate to contact me directly.",
+      "title": "Frequently Asked Questions",
+      "items": {
+        "1": {
+          "question": "What services do you offer?",
+          "answer": "I specialize in full-stack web development, offering frontend, backend, and database solutions. My services include responsive website development, web application creation, API development, system administration, and more."
+        },
+        "2": {
+          "question": "What is your typical project process?",
+          "answer": "My project process typically includes requirement gathering, planning, design, development, testing, and deployment. I maintain regular communication throughout to ensure your vision is being realized according to your expectations."
+        },
+        "3": {
+          "question": "How do you handle project pricing?",
+          "answer": "Project pricing depends on complexity, timeline, and specific requirements. I offer both hourly rates and fixed-price quotes based on the project's scope. I'm happy to provide a detailed proposal once I understand your needs."
+        },
+        "4": {
+          "question": "Can you work with existing codebases?",
+          "answer": "Yes, I'm experienced in working with existing projects and codebases. I can analyze, refactor, optimize, or extend existing applications regardless of whether I was involved in their initial development."
+        },
+        "5": {
+          "question": "Do you offer maintenance services after project completion?",
+          "answer": "Absolutely! I provide ongoing maintenance and support services to ensure your applications continue to run smoothly. This includes bug fixes, security updates, performance optimizations, and feature additions as needed."
+        }
+      },
+      "more": "Still have questions?",
+      "contact": "Contact me directly."
+    },
+    "newsletter": {
+      "title": "Subscribe to My Newsletter",
+      "description": "Stay updated with my latest projects, tech insights, and professional developments. No spam, just valuable content.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe",
+      "success": "Success! You've been added to my newsletter.",
+      "error": "Failed to subscribe. Please try again.",
+      "privacy": "Your email will be used exclusively for the newsletter. You can unsubscribe at any time."
+    },
+    "form": {
+      "title": "Send a Message",
+      "description": "Fill out the form below and I'll respond within 24-48 hours.",
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email address"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What is this regarding?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Please describe your project or inquiry"
+      },
+      "button": {
+        "send": "Send Message",
+        "submitting": "Sending..."
+      },
+      "success": {
+        "title": "Message Sent Successfully!",
+        "message": "Thank you for reaching out. I've received your message and will get back to you as soon as possible, usually within 24-48 hours.",
+        "button": "Send Another Message"
+      },
+      "error": {
+        "title": "Something went wrong",
+        "message": "There was an error sending your message. Please try again later or contact me directly via email."
+      },
+      "privacy": "Your information will only be used to respond to your inquiry and will never be shared with third parties."
+    }
+  },
+
+  "blog": {
+    "hero": {
+      "subtitle": "Insights & Updates",
+      "title": "Explore Our Blog",
+      "description": "Discover the latest in development, design, and technology trends.",
+      "searchPlaceholder": "Search articles...",
+      "search": "Search",
+      "explore": "Explore Posts"
+    },
+    "author": {
+      "moreFromAuthor": "More From Author"
+    },
+    "showing": "Showing {count} of {total} posts",
+    "sortedBy": "Sorted by",
+    "filters": {
+      "latest": "Latest",
+      "popular": "Popular"
+    },
+    "noResults": {
+      "title": "No Posts Found",
+      "description": "We couldn't find any posts matching your criteria. Try adjusting your filters or search terms.",
+      "resetButton": "Clear Filters"
+    },
+    "loadMore": "Load More",
+    "detail": {
+      "tableOfContents": "Table of Contents",
+      "share": "Share",
+      "linkCopied": "Link copied!",
+      "backToBlog": "Back to Blog",
+      "tags": "Tags",
+      "previousPost": "Previous Post",
+      "nextPost": "Next Post"
     }
   }
 }
