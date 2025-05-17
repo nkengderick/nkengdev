@@ -61,8 +61,135 @@ export function CodeBlock({
     }
   };
 
+  // Basic syntax highlighting by applying Tailwind classes to code tokens
+  const highlightSyntax = (line: string, lang: string) => {
+    // eslint-disable-next-line prefer-const
+    let highlightedLine = line;
+
+    // Default text color based on language
+    let defaultColor = "text-gray-200";
+    if (lang === "javascript" || lang === "js" || lang === "jsx") {
+      defaultColor = "text-gray-100";
+    } else if (lang === "python" || lang === "py") {
+      defaultColor = "text-gray-100";
+    } else if (lang === "bash" || lang === "sh") {
+      defaultColor = "text-gray-100";
+    }
+
+    // Tokenize the line for highlighting
+    const tokens: { text: string; className: string }[] = [];
+    let remainingLine = highlightedLine;
+
+    // Language-specific highlighting rules
+    if (lang === "javascript" || lang === "js" || lang === "jsx") {
+      // Comments (// and /* */)
+      const commentRegex = /(\/\/.*$)|(\/\*[\s\S]*?\*\/)/m;
+      const commentMatch = remainingLine.match(commentRegex);
+      if (commentMatch) {
+        const comment = commentMatch[0];
+        tokens.push({ text: comment, className: "text-green-500 italic" });
+        remainingLine = remainingLine.replace(comment, "");
+      }
+
+      // Keywords (e.g., function, const, let, var, return)
+      const keywordRegex =
+        /\b(function|const|let|var|return|if|else|for|while|class)\b/;
+      const keywordParts = remainingLine.split(keywordRegex);
+      for (let i = 0; i < keywordParts.length; i++) {
+        if (keywordRegex.test(keywordParts[i])) {
+          tokens.push({
+            text: keywordParts[i],
+            className: "text-blue-400 font-semibold",
+          });
+        } else {
+          // Strings (single and double quotes)
+          const stringRegex = /(['"](?:[^'\\]|\\.)*['"])/;
+          const stringParts = keywordParts[i].split(stringRegex);
+          for (let j = 0; j < stringParts.length; j++) {
+            if (stringRegex.test(stringParts[j])) {
+              tokens.push({
+                text: stringParts[j],
+                className: "text-orange-400",
+              });
+            } else {
+              tokens.push({ text: stringParts[j], className: defaultColor });
+            }
+          }
+        }
+      }
+    } else if (lang === "python" || lang === "py") {
+      // Comments (#)
+      const commentRegex = /(#.*$)/m;
+      const commentMatch = remainingLine.match(commentRegex);
+      if (commentMatch) {
+        const comment = commentMatch[0];
+        tokens.push({ text: comment, className: "text-green-500 italic" });
+        remainingLine = remainingLine.replace(comment, "");
+      }
+
+      // Keywords (e.g., def, class, if, else, for, while)
+      const keywordRegex =
+        /\b(def|class|if|else|for|while|return|import|from)\b/;
+      const keywordParts = remainingLine.split(keywordRegex);
+      for (let i = 0; i < keywordParts.length; i++) {
+        if (keywordRegex.test(keywordParts[i])) {
+          tokens.push({
+            text: keywordParts[i],
+            className: "text-blue-400 font-semibold",
+          });
+        } else {
+          // Strings
+          const stringRegex = /(['"](?:[^'\\]|\\.)*['"])/;
+          const stringParts = keywordParts[i].split(stringRegex);
+          for (let j = 0; j < stringParts.length; j++) {
+            if (stringRegex.test(stringParts[j])) {
+              tokens.push({
+                text: stringParts[j],
+                className: "text-orange-400",
+              });
+            } else {
+              tokens.push({ text: stringParts[j], className: defaultColor });
+            }
+          }
+        }
+      }
+    } else if (lang === "bash" || lang === "sh") {
+      // Comments (#)
+      const commentRegex = /(#.*$)/m;
+      const commentMatch = remainingLine.match(commentRegex);
+      if (commentMatch) {
+        const comment = commentMatch[0];
+        tokens.push({ text: comment, className: "text-green-500 italic" });
+        remainingLine = remainingLine.replace(comment, "");
+      }
+
+      // Commands (e.g., echo, cd, ls)
+      const commandRegex = /\b(echo|cd|ls|cat|mkdir|rm|mv|cp|grep|chmod)\b/;
+      const commandParts = remainingLine.split(commandRegex);
+      for (let i = 0; i < commandParts.length; i++) {
+        if (commandRegex.test(commandParts[i])) {
+          tokens.push({
+            text: commandParts[i],
+            className: "text-blue-400 font-semibold",
+          });
+        } else {
+          tokens.push({ text: commandParts[i], className: defaultColor });
+        }
+      }
+    } else {
+      // Default: no specific highlighting
+      tokens.push({ text: remainingLine, className: defaultColor });
+    }
+
+    return tokens;
+  };
+
+  const lines = code.split("\n");
+
   return (
-    <div className={`${className} group relative my-6 rounded-lg overflow-hidden`}>
+    <div
+      className={`${className} group relative my-6 rounded-lg bg-black overflow-hidden`}
+    >
       {/* Header with file name and language */}
       <div className="flex items-center justify-between px-4 py-2 bg-card/90 border-b border-border/50 text-muted-foreground">
         <div className="flex items-center gap-2">
@@ -115,12 +242,13 @@ export function CodeBlock({
         </motion.button>
       </div>
 
-      {/* Code content */}
-      <div className="max-h-[500px] overflow-auto p-4 bg-card/70 font-mono text-sm relative">
-        <pre className="relative">
+      {/* Code content with line numbers */}
+      <div className="max-h-[500px] overflow-auto bg-gray-700 font-mono text-sm">
+        <div className="flex">
+          {/* Line numbers column */}
           {showLineNumbers && (
-            <div className="absolute left-0 top-0 bottom-0 w-8 flex flex-col items-end pr-2 text-muted-foreground/50 select-none border-r border-border/20">
-              {code.split("\n").map((_, i) => (
+            <div className="flex-shrink-0 w-10 pr-2 pl-4 py-4 text-muted-foreground/50 select-none border-r border-border/20 text-right">
+              {lines.map((_, i) => (
                 <div key={i} className="leading-relaxed">
                   {i + 1}
                 </div>
@@ -128,24 +256,31 @@ export function CodeBlock({
             </div>
           )}
 
-          <code
-            className={`language-${language}`}
-            style={{ paddingLeft: showLineNumbers ? "2rem" : 0 }}
-          >
-            {code.split("\n").map((line, i) => (
-              <div
-                key={i}
-                className={
-                  highlightLines.includes(i + 1)
-                    ? "bg-primary/10 -mx-4 px-4 rounded-md border-l-2 border-primary"
-                    : ""
-                }
-              >
-                {line || " "}
-              </div>
-            ))}
-          </code>
-        </pre>
+          {/* Code content column */}
+          <pre className="flex-1 p-4">
+            <code className={`language-${language}`}>
+              {lines.map((line, i) => {
+                const tokens = highlightSyntax(line, language.toLowerCase());
+                return (
+                  <div
+                    key={i}
+                    className={
+                      highlightLines.includes(i + 1)
+                        ? "bg-primary/10 -mx-4 px-4 rounded-md border-l-2 border-primary"
+                        : ""
+                    }
+                  >
+                    {tokens.map((token, j) => (
+                      <span key={j} className={token.className}>
+                        {token.text || " "}
+                      </span>
+                    ))}
+                  </div>
+                );
+              })}
+            </code>
+          </pre>
+        </div>
       </div>
 
       {/* Decorative sparkle */}

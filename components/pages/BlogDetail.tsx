@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -29,6 +29,7 @@ import {
   getBlogPostsByDate,
 } from "@/data/blogs";
 import { BlogPost } from "@/data/types";
+import { CodeBlock } from "@/components/ui/code-block";
 
 export default function BlogDetailPage() {
   const params = useParams();
@@ -46,7 +47,7 @@ export default function BlogDetailPage() {
   const [nextPost, setNextPost] = useState<BlogPost | null>(null);
   const [prevPost, setPrevPost] = useState<BlogPost | null>(null);
 
-  // Extract all the headings from the content for table of contents
+  // Extract headings from content for table of contents
   const extractHeadings = (content: string) => {
     const headingRegex = /^(#{1,6})\s+(.+)$/gm;
     const extractedHeadings = [];
@@ -66,68 +67,70 @@ export default function BlogDetailPage() {
     return extractedHeadings;
   };
 
-  // Process code blocks with syntax highlighting
-  const processCodeBlocks = (content: string) => {
-    const parts = content.split(/```([\w]*)\n([\s\S]*?)```/g);
-    let processedContent = "";
-
-    for (let i = 0; i < parts.length; i++) {
-      if (i % 3 === 0) {
-        // Regular text content
-        processedContent += parseMarkdown(parts[i]);
-      } else if (i % 3 === 1) {
-        // Language name
-        const language = parts[i] || "plaintext";
-        const code = parts[i + 1];
-
-        // Insert code block component placeholder
-        processedContent += `<div class="code-block" data-language="${language}" data-code="${encodeURIComponent(code)}"></div>`;
-        i++; // Skip the next part as we've already processed it
-      }
-    }
-
-    return processedContent;
-  };
-
-  // Parse markdown content to HTML (simplified version)
+  // Parse markdown content to HTML, preserving code blocks
   const parseMarkdown = (markdown: string) => {
-    // Replace headings with anchored headings
-    let content = markdown.replace(
-      /^(#{1,6})\s+(.+)$/gm,
-      (match, hashes, title) => {
-        const level = hashes.length;
-        const id = title
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, "")
-          .replace(/\s+/g, "-");
+    const codeBlocks: { language: string; code: string }[] = [];
+    let content = markdown;
 
-        return `<h${level} id="${id}">${title}</h${level}>`;
+    // Replace code blocks with unique placeholders
+    content = content.replace(
+      /```([\w]*)\n([\s\S]*?)```/g,
+      (_, language, code) => {
+        const placeholder = `__CODE_BLOCK_${codeBlocks.length}__`;
+        codeBlocks.push({
+          language: language || "plaintext",
+          code: code.trim(),
+        });
+        return placeholder;
       }
     );
 
-    // Replace bold
+    // Process all markdown elements, including headings
+    content = content.replace(/^(#{1,6})\s+(.+)$/gm, (match, hashes, title) => {
+      const level = hashes.length;
+      const id = title
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-");
+      return `<h${level} id="${id}">${title}</h${level}>`;
+    });
+
     content = content.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-
-    // Replace italic
     content = content.replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-    // Replace links
     content = content.replace(
       /\[(.*?)\]\((.*?)\)/g,
       '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1</a>'
     );
-
-    // Replace lists
     content = content.replace(/^-\s+(.+)$/gm, "<li>$1</li>");
     content = content.replace(
       /(<li>.*<\/li>\n)+/g,
       '<ul class="list-disc pl-6 my-4">$&</ul>'
     );
-
-    // Replace paragraphs
     content = content.replace(/^(?!<[h|u]|$)(.+)$/gm, "<p>$1</p>");
 
-    return content;
+    // Split content by placeholders and intersperse code blocks
+    const parts = content.split(/(__CODE_BLOCK_\d+__)/);
+    const processedContent: (string | JSX.Element)[] = [];
+
+    let codeBlockIndex = 0;
+    for (const part of parts) {
+      if (codeBlocks.some((_, idx) => part === `__CODE_BLOCK_${idx}__`)) {
+        const { language, code } = codeBlocks[codeBlockIndex];
+        processedContent.push(
+          <CodeBlock
+            key={`code-block-${codeBlockIndex}`}
+            code={code}
+            language={language}
+            showLineNumbers={true}
+          />
+        );
+        codeBlockIndex++;
+      } else if (part.trim()) {
+        processedContent.push(part);
+      }
+    }
+
+    return processedContent;
   };
 
   // Find the blog post based on the slug
@@ -172,42 +175,13 @@ export default function BlogDetailPage() {
       setPrevPost(sortedPosts[currentIndex + 1]);
     }
 
-    // Increment view count (in a real app, this would be an API call)
     setLoading(false);
   }, [params.slug]);
 
   // Handle bookmark toggling
   const handleBookmark = () => {
     setIsBookmarked(!isBookmarked);
-    // In a real app, this would save to user's bookmarks
   };
-
-  // Render code blocks
-  useEffect(() => {
-    if (!post || !post.content || typeof document === "undefined") return;
-
-    const codeBlocks = document.querySelectorAll(".code-block");
-    codeBlocks.forEach((block) => {
-      const language = block.getAttribute("data-language") || "plaintext";
-      const code = decodeURIComponent(block.getAttribute("data-code") || "");
-
-      // Clear any existing content
-      block.innerHTML = "";
-
-      // Create a React element for the code block
-      const codeBlockContainer = document.createElement("div");
-      block.appendChild(codeBlockContainer);
-
-      // In a real implementation, you'd use ReactDOM.render() or a ref approach
-      // Here we're just creating a simple pre/code element
-      const pre = document.createElement("pre");
-      const codeElement = document.createElement("code");
-      codeElement.className = `language-${language}`;
-      codeElement.textContent = code;
-      pre.appendChild(codeElement);
-      codeBlockContainer.appendChild(pre);
-    });
-  }, [post]);
 
   if (loading) {
     return (
@@ -391,14 +365,18 @@ export default function BlogDetailPage() {
           <div className="lg:col-span-9 order-1 lg:order-2">
             <article className="bg-card/70 backdrop-blur-sm rounded-xl border border-border/50 p-6 md:p-8 shadow-lg">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                {/* Render the markdown content */}
-                {post.content && (
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: processCodeBlocks(post.content),
-                    }}
-                  />
-                )}
+                {/* Render the processed content with CodeBlock components */}
+                {post.content &&
+                  parseMarkdown(post.content).map((element, index) =>
+                    typeof element === "string" ? (
+                      <div
+                        key={`content-${index}`}
+                        dangerouslySetInnerHTML={{ __html: element }}
+                      />
+                    ) : (
+                      <div key={`content-${index}`}>{element}</div>
+                    )
+                  )}
               </div>
             </article>
 
@@ -464,3 +442,5 @@ export default function BlogDetailPage() {
     </main>
   );
 }
+
+
