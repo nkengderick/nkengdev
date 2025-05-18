@@ -21,7 +21,7 @@ import { useState } from "react";
 // This would typically come from your data/projects.json file
 const featuredProjects = [
   {
-    id: 1,
+    id: "tenants-sphere",
     title: "Tenant's Sphere",
     description:
       "A comprehensive property management software with features like tenancy agreements, maintenance requests, and online rent payments.",
@@ -34,7 +34,7 @@ const featuredProjects = [
     gradient: "from-blue-600 to-cyan-600",
   },
   {
-    id: 2,
+    id: "student-proguide",
     title: "Student ProGuide",
     description:
       "Document delivery web application built with Next.js and TypeScript for efficient student information management.",
@@ -47,7 +47,7 @@ const featuredProjects = [
     gradient: "from-purple-600 to-pink-600",
   },
   {
-    id: 3,
+    id: "biometric-attendance",
     title: "Biometric Attendance App",
     description:
       "Cross-platform mobile application for institutions to record and manage student attendance with biometric verification.",
@@ -153,11 +153,11 @@ export function ProjectsGrid() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
         >
-          {featuredProjects.map((project) => (
+          {featuredProjects.map((project, index) => (
             <motion.div
               key={project.id}
               variants={itemVariants}
-              onHoverStart={() => setHoveredId(project.id)}
+              onHoverStart={() => setHoveredId(index)}
               onHoverEnd={() => setHoveredId(null)}
               className="group relative"
             >
@@ -188,7 +188,7 @@ export function ProjectsGrid() {
                   <motion.div
                     className="absolute inset-0 bg-black/60 flex items-center justify-center gap-4"
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: hoveredId === project.id ? 1 : 0 }}
+                    animate={{ opacity: hoveredId === index ? 1 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
                     <motion.a
